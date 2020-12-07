@@ -12,20 +12,21 @@
 body {
   font-size:20px; 
   min-height: 355px;
+ 
 }
 
 .first-paraent {
   display: flex;
   flex-wrap: nowrap;
-  background-color: var(--color1);
   height: 100%;
 }
 
 /*........................................................................................................*/
 .calculator {
-  max-width: 1230;
+  max-width: 1230px;
   width: 80%;
   height: 100%;
+  background-color:#f1f2f6; 
 }
 /*.........................................................................................................*/
 
@@ -67,12 +68,13 @@ body {
 }
 
 .memory>button {
-  margin-right: 2px;
+  margin: 0px;
   width: 100px;
   height: 95%;
-  float: left;
   font-size: 60%;
   font-weight: bold;
+  background-color: blue;
+  float: left;
 }
 .M{
   color:rgb(160, 160, 160);
@@ -101,7 +103,6 @@ body {
   border: 1px solid black;
   text-align: center;
   align-items: baseline;
-  float: left;
   font-size: 80%;
   }
   .color2{
@@ -116,8 +117,8 @@ body {
   }
 /*...................................................................memory and history.....................................*/
 .memory-history { 
-  width: 20%;
-  max-width: 330px;  
+  width:330px;
+  background-color:blue; 
 }
 
 .m {
@@ -145,5 +146,40 @@ body {
   height: 2px;
   background-color: rgb(0, 110, 255);
 }
-/*............................................................................................................................*/
+/*.............................................................................................................................*/
+@media only screen and (min-width:1290px){
+  .memory-history {   
+    
+  }  
+}
 
+
+/* small tablet to big tablet : 1023 to 1290*/
+@media only screen and (min-width:1023px){
+  
+  .memory-history {   
+    
+  }  
+}
+
+/* small tablet to big tablet : 767 to 1023*/
+@media only screen and (min-wdith:1023px){
+  .memory-history { 
+    
+  }    
+}
+
+
+/* small phones to tablet : 480 to 767*/
+@media only screen and (min-width:680px)and (max-width:790px){
+   
+    .memory>button { background-color: red; width: 20%; font-size: 50%;}
+    
+}
+
+
+/* small phones : from 0 to 480*/
+@media only screen and (min-width:480px)and (max-wdith:679px){
+
+  .memory>button { background-color: rgb(82, 187, 182); font-size: 30%;}
+}
