@@ -88,6 +88,7 @@ body {
   font-weight: bold;
   background-color: blue;
   border: none;
+  float: left;
 }
 
 .memory>button:hover {
@@ -201,13 +202,6 @@ body {
 }
 
 /*.............................................................................................................................*/
-@media only screen and (min-width:1200px)and (max-width:1536px) {
-
-  .memory>button {
-      background-color: rgb(50, 148, 205);
-  }
-
-}
 
 /* small tablet to big tablet : 767 to 1023*/
 @media only screen and (min-width:790px)and (max-width:1200px) {
@@ -241,11 +235,6 @@ body {
 }
 
 
-/* small phones : from 0 to 480*/
-/* @media only screen and (min-width:480px)and (max-wdith:680px){
-
-  .memory>button { background-color: rgb(82, 187, 182); font-size: 30%;}
-}  */
 
 @media only screen and (min-width:480px)and (max-width:650px) {
 
@@ -288,4 +277,4 @@ body {
       width: 100%;
   }
 
-}
+} 
