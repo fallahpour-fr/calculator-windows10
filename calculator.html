@@ -1,9 +1,11 @@
 <html>
+
 <head>
-  <title>calcculator Windows10 </title>
+  <title>calculator Windows10 </title>
   <link rel="stylesheet" type="text/css" href="./calculator.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./mediaquery.css" >
+  <link href="./mediaquery.css">
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
@@ -13,22 +15,27 @@
     <div class="calculator">
       <div class="header">
 
-        <div class="navitem">
-          <button class="navLink one">
-              <span class="material-icons">dehaze</span>
-              <!-- <span class="tooltip">Open navigation</span> -->
+
+        <div class="one">
+          <div class="star">
+
+            <button class="two">
+              <i class="material-icons">dehaze</i>
             </button>
 
-          <li class="navLink">
-            <h2>Standard</h2>
-          </li>
 
-          <button class="navLink one">
-              <span class="material-icons">launch</span>
-              <!-- <span class="tooltip">Keep on Top(Alt+Up)</span>-->
-           </button>
-           <button class="Me"><span class="material-icons">history</span></button>
+            <span class="three">Standard</span>
+
+
+            <button class="two">
+              <i class="material-icons">launch</i>
+            </button>
+          </div>
+          <button class="Me"><i class="material-icons">history</i></button>
         </div>
+
+       <p>0</p>
+        
 
       </div>
 
@@ -37,66 +44,63 @@
       <div class="Memory">
         <button class="M">MC</button>
         <button class="M">MR</button>
-        <button class="M+">M+</button>
-        <button class="M-">M-</button>
-        <button class="MS">MS</button>
-        <button class="Mn">M</button>
+        <button>M+</button>
+        <button>M-</button>
+        <button>MS</button>
+        <span><button class="Mn">M</button></span>
       </div>
 
 
       <div class="btn">
         <div class="row first">
-          <button class="icon color2"><span class="material-icons" style="font-size: 17px;">&#37;</span></button>
-          <button class="CE color2">CE</button>
-          <button class="C color2">C</button>
-          <button class="icon color2"><span class="iconify" data-icon="ic-outline-backspace"
-              data-inline="false color2"></span></button>
+          <button class="color2"><i class="material-icons">&#37;</i></button>
+          <button class="color2">CE</button>
+          <button class="color2">C</button>
+          <button class="color2"><i class="iconify" data-icon="ic-outline-backspace"
+              data-inline="false color2"></i></button>
         </div>
 
         <div class="row second">
-          <button class="1/x color2"><span class="material-icons">&#8543;</span>X</button>
-          <button class="x^2 color2"><span class="material-icons" > </span>x<sup>2</sup></button>
+          <button class="color2"><i class="material-icons">&#8543;</i>X</button>
+          <button class="color2">x<sup>2</sup></button>
 
-          <button class="radical color2"><span class="material-icons" style="font-size: 15px;"> <span
-                style="white-space: nowrap;">
-                &radic;<span style="text-decoration:overline;">&nbsp;X&nbsp; </span></span> </span></button>
+          <button class="color2"><i class="material-icons">
+              &radic;<i style="text-decoration:overline;"id="radical">&nbsp;X&nbsp;</i></i></button>
 
-          <button class="x/x color2"><span class="material-icons"> &#247; </span></button>
+          <button class="color2"><i class="material-icons"> &#247;</i></button>
 
         </div>
 
 
         <div class="row third">
-          <button class="7 color3">7</button>
-          <button class="8 color3">8</button>
-          <button class="8 color3">9</button>
-          <button class="* color2"><span class="material-icons"> &#215; </span></button>
+          <button class="color3">7</button>
+          <button class="color3">8</button>
+          <button class="color3">9</button>
+          <button class="color2"><i class="material-icons"> &#215; </i></button>
 
         </div>
 
         <div class="row fourth">
-          <button class="4 color3">4</button>
-          <button class="5 color3">5</button>
-          <button class="6 color3">6</button>
-          <button class="- color2"><span class="material-icons"> &#8722; </span></button>
+          <button class="color3">4</button>
+          <button class="color3">5</button>
+          <button class="color3">6</button>
+          <button class="color2"><i class="material-icons"> &#8722; </i></button>
 
         </div>
 
         <div class="row fifth">
-          <button class="1 color3">1</button>
-          <button class="2 color3">2</button>
-          <button class="3 color3">3</button>
-          <button class="+ color2"><span class="material-icons"> &#43; </span></button>
+          <button class="color3">1</button>
+          <button class="color3">2</button>
+          <button class="color3">3</button>
+          <button class="color2"><i class="material-icons">&#43;</i></button>
 
         </div>
 
         <div class="row sixth">
-          <button class="+/- color3"><span class="material-icons"> <span
-                style="font-size: 15px;"><sup>&#43;</sup></span>&#47;<span style="font-size: 15px;">&#8722;</span>
-            </span></button>
-          <button class="0 color3">0</button>
-          <button class=". color3">.</button>
-          <button class="=" id="equal"><span class="material-icons"> &#61; </span></button>
+          <button class="color3"><i class="material-icons"><sup>&#43;</sup>&#47;&#8722;</i></button>
+          <button class="color3">0</button>
+          <button class="color3">.</button>
+          <button id="equal"><i class="material-icons">&#61;</i></button>
 
         </div>
 
