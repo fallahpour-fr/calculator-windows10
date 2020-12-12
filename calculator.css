@@ -3,18 +3,25 @@
   margin: 0px;
   padding: 0px;
   color: black;
+  
 }
 
 /*................................................color.................................................*/
 :root {
-  --color1: #f1f2f6;
+  --color: #CAD3C8;
+  --transition: 0.5s;
+  --box-shadow: 5px 5px 10px #bcc0bb,
+    -5px -5px 10px #bcc0bb;
+}
+
+.material-icons {
+  font-size: 20px !important;
 }
 
 /*.......................................................................................................*/
 body {
-  font-size: 20px;
   min-height: 355px;
-
+  font-size: 20px;
 }
 
 .first-paraent {
@@ -39,37 +46,51 @@ body {
   padding: 0;
   width: 100%;
   height: 30%;
-
+  font-size: 120%;
+  font-weight: bold;
 }
 
-.navLink {
-  display: inline-block;
+.star {
+  display: inline-flex;
 }
 
-.navlink.one {
-  padding: 6px;
-  font-size: 30%;
-  margin-right: 3px;
+.two {
   border: none;
+  padding: 0px 10px;
 }
 
-.navlink.one:hover {
-  background-color: tomato;
-  transition: 0.5s;
-}
-
-.navLink h2 {
-  padding: 0px;
-  font-size: 110%;
-  text-align: center;
+.three {
+  line-height: 50px;
+  padding: 0px 10px;
 }
 
 .Me {
-  padding: 6px;
+  padding: 10px;
   margin: 0px;
   float: right;
   visibility: hidden;
 }
+
+.two:hover {
+  background-color: var(--color);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.Me:hover {
+  background-color: var(--color);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+
+p{
+  height: 70%;
+  line-height: 150px;
+  font-size: 80px;
+  float: right;
+}
+
 
 
 /*...................................................button memory........................................................*/
@@ -86,16 +107,14 @@ body {
   height: 95%;
   font-size: 60%;
   font-weight: bold;
-  background-color: blue;
   border: none;
   float: left;
 }
 
 .memory>button:hover {
-  background-color: tomato;
-  transition: 0.5s;
-  box-shadow: 20px 20px 60px #489dcf,
-    -20px -20px 60px #62d5ff;
+  background-color: var(--color);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
 }
 
 .M {
@@ -109,7 +128,6 @@ body {
   height: 95%;
   font-size: 60%;
   font-weight: bold;
-  background-color: rgba(115, 255, 0, 0.452);
   float: right;
   visibility: hidden;
 }
@@ -140,10 +158,9 @@ body {
 }
 
 .row>button:hover {
-  background-color: tomato;
-  transition: 0.5s;
-  box-shadow: 1px 1px 3px #489dcf,
-    -1px -1px 60px #62d5ff;
+  background-color: var(--color);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
 }
 
 .color2 {
@@ -160,7 +177,7 @@ body {
 }
 
 #equal:hover {
-  background-color: tomato;
+  background-color: #538fff;
   transition: 0.5s;
 }
 
@@ -201,80 +218,85 @@ body {
   background-color: rgb(0, 110, 255);
 }
 
-/*.............................................................................................................................*/
+/*............................................................Mediya query.................................................................*/
 
-/* small tablet to big tablet : 767 to 1023*/
+/* first : 790 to 1200*/
 @media only screen and (min-width:790px)and (max-width:1200px) {
 
   .memory>button {
-      background-color: rgb(0, 255, 136);
-      font-size: 50%;
+    font-size: 50%;
   }
 
 }
 
-/* small phones to tablet : 480 to 767*/
+/* second : 650 to 790*/
 @media only screen and (min-width:650px)and (max-width:790px) {
 
   .memory>button {
-      background-color: red;
-      width: 20%;
-      font-size: 45%;
+    width: 20%;
+    font-size: 45%;
   }
 
   .Mn {
-      display: none;
+    display: none;
   }
 
   .row>button {
-      margin: 1px;
-      font-size: 60%;
+    margin: 1px;
+    font-size: 60%;
   }
 
 
 }
 
 
-
+/* third: 480 to 650*/
 @media only screen and (min-width:480px)and (max-width:650px) {
 
   .memory>button {
-      background-color: yellowgreen;
-      font-size: 50%;
+    font-size: 50%;
   }
 
   .row>button {
-      font-size: 68%;
+    font-size: 68%;
   }
 
   .Mn {
-      visibility: visible;
-      border: none;
+    visibility: visible;
+    border: none;
   }
 
   .Mn:hover {
-      background-color: tomato;
-      transition: 0.5s;
+    background-color: var(--color);
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
   }
 
   .Me {
-      visibility: visible;
-      border: none;
+    visibility: visible;
+    border: none;
   }
 
   .Me:hover {
-      background-color: tomato;
-      transition: 0.5s;
+    background-color: var(--color);
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
   }
 
 
   .memory-history {
-      background-color: #5973da;
-      display: none;
+    display: none;
   }
 
   .calculator {
-      width: 100%;
+    width: 100%;
   }
 
-} 
+  .material-icons {
+    font-size: 17px !important;
+  }
+  #radical{
+    font-size: 14px;
+  }
+
+}
