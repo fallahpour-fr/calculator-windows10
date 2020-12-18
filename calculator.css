@@ -20,7 +20,7 @@
 
 /*.......................................................................................................*/
 body {
-  min-height: 355px;
+  min-height: 480px;
   font-size: 20px;
 }
 
@@ -54,9 +54,14 @@ body {
   display: inline-flex;
 }
 
+.one{
+  height: 35%;
+}
+
 .two {
   border: none;
   padding: 0px 10px;
+  transition: var(--transition);
 }
 
 .three {
@@ -69,20 +74,18 @@ body {
   margin: 0px;
   float: right;
   visibility: hidden;
+  transition: var(--transition);
 }
 
 .two:hover {
   background-color: var(--color);
-  transition: var(--transition);
   box-shadow: var(--box-shadow);
 }
 
 .Me:hover {
   background-color: var(--color);
-  transition: var(--transition);
   box-shadow: var(--box-shadow);
 }
-
 
 p{
   height: 70%;
@@ -90,9 +93,6 @@ p{
   font-size: 80px;
   float: right;
 }
-
-
-
 /*...................................................button memory........................................................*/
 .memory {
   width: 100%;
@@ -109,11 +109,11 @@ p{
   font-weight: bold;
   border: none;
   float: left;
+  transition: var(--transition);
 }
 
 .memory>button:hover {
   background-color: var(--color);
-  transition: var(--transition);
   box-shadow: var(--box-shadow);
 }
 
@@ -155,11 +155,11 @@ p{
   align-items: baseline;
   font-size: 80%;
   border: none;
+  transition: var(--transition);
 }
 
 .row>button:hover {
   background-color: var(--color);
-  transition: var(--transition);
   box-shadow: var(--box-shadow);
 }
 
@@ -208,7 +208,7 @@ p{
   transition: 0.5s;
 }
 
-.H_M a::after {
+#border::after{
   content: "";
   margin-top: 5px;
   margin-left: 1px;
@@ -245,7 +245,11 @@ p{
     margin: 1px;
     font-size: 60%;
   }
-
+  p{
+    height: 60%;
+    line-height: 110px;
+    font-size: 60px;
+  }
 
 }
 
@@ -264,22 +268,22 @@ p{
   .Mn {
     visibility: visible;
     border: none;
+    transition: var(--transition);
   }
 
   .Mn:hover {
     background-color: var(--color);
-    transition: var(--transition);
     box-shadow: var(--box-shadow);
   }
 
   .Me {
     visibility: visible;
     border: none;
+    transition: var(--transition);
   }
 
   .Me:hover {
     background-color: var(--color);
-    transition: var(--transition);
     box-shadow: var(--box-shadow);
   }
 
@@ -297,6 +301,12 @@ p{
   }
   #radical{
     font-size: 14px;
+  }
+
+  p{
+    height: 60%;
+    line-height: 100px;
+    font-size: 50px;
   }
 
 }
