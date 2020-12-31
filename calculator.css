@@ -226,6 +226,11 @@ p{
   .memory>button {
     font-size: 50%;
   }
+  p{
+    height: 50%;
+    line-height: 90px;
+    font-size: 50px;
+  }
 
 }
 
@@ -246,9 +251,9 @@ p{
     font-size: 60%;
   }
   p{
-    height: 60%;
+    height: 50%;
     line-height: 110px;
-    font-size: 60px;
+    font-size: 50px;
   }
 
 }
@@ -302,6 +307,7 @@ p{
   #radical{
     font-size: 14px;
   }
+  
 
   p{
     height: 60%;
