@@ -90,7 +90,7 @@ body {
 p{
   height: 70%;
   line-height: 150px;
-  font-size: 80px;
+  font-size: 70px;
   float: right;
 }
 /*...................................................button memory........................................................*/
@@ -255,6 +255,7 @@ p{
     line-height: 110px;
     font-size: 50px;
   }
+  
 
 }
 
